@@ -5,3 +5,7 @@
 2. List make command by Artisan
 
 `php artisan list make`
+
+3. Migrate commands
+
+`php artisan migrate:refresh --seed`
