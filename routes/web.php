@@ -21,7 +21,6 @@
 // });
 
 Route::get('/', 'TaskController@home');
-Route::resource('mySampleResources', 'MySampleResourceController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
