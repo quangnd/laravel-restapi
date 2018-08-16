@@ -11,16 +11,3 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-
-// Route::get('/hello', function () {
-//   return 'Hello world';
-// });
-
-Route::get('/', 'TaskController@home');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
