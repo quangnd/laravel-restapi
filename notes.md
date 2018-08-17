@@ -10,6 +10,9 @@
 
 `php artisan migrate:refresh --seed`
 
+4. Create controller with model name
+
+`php artisan make:controller Product/ProductController -r -m Product`
 
 # Questions
 
