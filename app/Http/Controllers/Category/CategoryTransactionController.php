@@ -15,6 +15,6 @@ class CategoryTransactionController extends ApiController
      */
     public function index()
     {
-        /
+
     }
 }
