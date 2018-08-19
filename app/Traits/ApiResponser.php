@@ -98,7 +98,25 @@ trait ApiResponser
         $paginated->appends(request()->all());
 
         return $paginated;
+    }
 
+    protected function cacheResponse($data)
+    {
+        $url = request()->url();
+
+        //Resolve cache problem with query parameters
+        $queryParams = request()->query();
+
+        ksort($queryParams);
+
+        $queryString = http_build_query($queryParams);
+
+        $fullUrl = "{$url}?{$queryString}";
+        //--
+
+        return Cache::remember($fullUrl, 30/60, function() use($data) {
+            return $data;
+        });
     }
 
     protected function transformData($data, $transformer)
