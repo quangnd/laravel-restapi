@@ -38,7 +38,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 
         'remember_token',
-        'verified_token',
+        //'verified_token',
     ];
 
     public function setNameAttribute($name) {
