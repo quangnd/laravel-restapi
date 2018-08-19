@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Transaction;
 use App\Http\Controllers\ApiController;
 use App\Transaction;
 
+
 class TransactionController extends ApiController
 {
+
     /**
      * Display a listing of the resource.
      *
