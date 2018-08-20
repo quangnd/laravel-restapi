@@ -1,4 +1,4 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 Restful API using Laravel 5.6
 
 # Quick start Guide
@@ -8,7 +8,7 @@ Restful API using Laravel 5.6
 **1. Clone this repo:**
 
 ```sh
-git clone git@gitlab.com:mu-website-services/shark-api.git
+git clone git@github.com:quangnd/laravel-restapi.git
 ```
 
 **2. Install the dependencies:**
@@ -17,7 +17,7 @@ git clone git@gitlab.com:mu-website-services/shark-api.git
 composer install
 ```
 
-**3. Create application key:**
+**3. Generate application key:**
 
 ```bash
 php artisan key:generate
