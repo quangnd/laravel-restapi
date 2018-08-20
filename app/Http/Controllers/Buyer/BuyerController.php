@@ -6,7 +6,13 @@ use App\Http\Controllers\ApiController;
 use Illuminate\Http\Request;
 use App\Buyer;
 
-class BuyerController extends ApiController {
+class BuyerController extends ApiController
+{
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     /**
      * Display a listing of the resource.
      *

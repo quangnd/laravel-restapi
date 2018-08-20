@@ -11,9 +11,6 @@
 |
 */
 
-
-Auth::routes();
-
 // Authentication Routes...
 $this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
 $this->post('login', 'Auth\LoginController@login');
